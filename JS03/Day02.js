@@ -51,14 +51,14 @@ console.log("Integer: ", a, "\nFloating point: ", b)
 
 // string
 
-let str = "Strike is coming";
+// let str = "Strike is coming";
 let name = 'Amit';
-console.log("String: ", str, "\nName: ", name);
+// console.log("String: ", str, "\nName: ", name);
 
 let islogin = true;
 let f = false;
 
-console.log("islogin: ", str, "\nf: ", f);
+console.log("islogin: ", islogin, "\nf: ", f);
 
 // undefined
 
@@ -66,6 +66,7 @@ let user;
 // const p;
 
 console.log(user);
+console.log(typeof(user))
 
 
 // bigint
@@ -73,18 +74,97 @@ console.log(user);
 let bigNum = 5124585423369514458552;
 
 console.log(bigNum);
+console.log(typeof(bigNum))
 
 // null
 
 let weather = null;
 
 console.log(weather);
+console.log(typeof(weather))
 
+// symbol
 
-
+const id1 = Symbol("id");
+const id2 = Symbol("id");
+console.log("id1: ", id1);
+console.log("id2: ", id2); 
+console.log(typeof(id1));
+console.log("id1 == id2: ", id1 == id2);
 
 
 
 
 
 // non-primitive;
+let arr = [10, 20, 11, "Rohit", true]
+console.log(arr)
+console.log(typeof arr);
+
+let object = {
+    name: "Manish",
+    account: 12321,
+    age: 18,
+    category: 'gen'
+}
+ 
+
+console.log(object);
+console.log(typeof(object))
+
+
+let s = function add(){
+    console.log("Hello");
+    return "Manish";
+}
+
+
+// console.log(add());
+console.log(s);
+console.log(s())
+console.log(typeof(s))
+
+
+
+
+// Primitive datatypes are immutables
+
+let num1 = 10;
+num1 = 20;
+
+console.log(num1);
+
+let str = "Rohit"
+for(i=0; i<str.length; i++){
+    console.log(str[i])
+}
+str = "Mohan"
+str[0] = "R"
+str = "Ramneet"
+console.log(str)
+
+
+
+
+// Non-Primitive datatypes are immutable
+
+let array = [10, 20, 75, 92];
+console.log("Before making changes: ", array)
+array.push(33);
+array[0] = 99
+console.log("Before making changes: ", array)
+
+let userObject = {
+    name: "Mohan",
+    age: 41,
+}
+console.log(userObject);
+console.log(userObject.age)
+userObject.age = 20;
+console.log(userObject)
+
+
+let e = 10;
+let h = e;
+h = 50;
+console.log(e, h);
