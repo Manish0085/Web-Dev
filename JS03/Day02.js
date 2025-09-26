@@ -154,14 +154,20 @@ array.push(33);
 array[0] = 99
 console.log("Before making changes: ", array)
 
-let userObject = {
+let user1 = {
     name: "Mohan",
     age: 41,
 }
-console.log(userObject);
-console.log(userObject.age)
-userObject.age = 20;
-console.log(userObject)
+console.log(user1);
+console.log(user1.age)
+user1.age = 20;
+console.log(user1)
+
+let user2 = user1;
+
+user2.name = "Raju";
+console.log("user1: ", user1);
+console.log("user2: ", user2);
 
 
 let e = 10;
