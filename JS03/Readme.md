@@ -58,3 +58,6 @@ This is nothing more than just like a c++ program which takes the JavaScript cod
 
 - JavaScript is a Dynamicaly typed and High level Programming language.
 - Automatic Garbage Collection.
+
+
+---
