@@ -14,3 +14,14 @@ console.log("x - y: ", x - y);
 console.log("x * y: ", x * y);
 console.log("x / y: ", x / y);
 console.log("x % y: ", x % y);
+
+// Conditional Operator
+console.log("x > y: ", x > y);
+console.log("x < y: ", x < y);
+console.log("x >= y: ", x >= y);
+console.log("x <= y: ", x <= y);
+console.log("x == y: ", x == y);
+console.log("x === y: ", x === y);
+
+
+
