@@ -54,3 +54,31 @@ else if(age1 > 60){
 else {
     console.log("Young");
 }
+
+
+// &&, ||
+console.log("Logical &&")
+console.log("true && false: ", true && false);
+console.log("true && true: ", true && true);
+console.log("false && false: ", false && false);
+console.log("fasle && true: ", false && true);
+
+
+console.log("Logical ||")
+console.log("true || false: ", true || false);
+console.log("true || true: ", true || true);
+console.log("false || false: ", false || false);
+console.log("fasle || true: ", false || true);
+
+let name1 = "Rohit";
+let name2 = "Mohit";
+// &&: If first value is true, it will return the first value itself
+// If first value is false, it will return second 
+let name = name1&&name2;
+console.log(name);
+
+
+let n = name1||name2;
+console.log(n);
+
+ 
