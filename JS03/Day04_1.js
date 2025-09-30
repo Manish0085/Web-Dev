@@ -24,4 +24,22 @@ console.log("x == y: ", x == y);
 console.log("x === y: ", x === y);
 
 
+// Convert string into Number
+let z = "10";
+let p = Number(z);
+console.log("Type of a: ", typeof p);
 
+
+// let a = "120okl";
+// let b = Number(a);
+// console.log(b); // NaN (Not a number)
+// console.log(0/0); // NaN
+// NaN: Not a Number (Type of it is number)
+
+let a = 10;
+let b = String(a);
+console.log(typeof b);
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(null));
+console.log(Number(undefined));
