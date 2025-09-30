@@ -43,3 +43,9 @@ console.log(Number(true));
 console.log(Number(false));
 console.log(Number(null));
 console.log(Number(undefined));
+
+
+console.log(String(true))
+console.log(String(false))
+console.log(String(undefined))
+console.log(String(null))
