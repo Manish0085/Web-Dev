@@ -19,7 +19,7 @@ console.log(str5.length);
 console.log(str5[1]);
 
 str5[2] = "s";
-console.log(str5);
+console.log("str5: ", str5);
 
 
 // Upper case
@@ -34,9 +34,51 @@ console.log(str5.toLocaleLowerCase());  // always returns a new string
 const lower = str5.toLocaleLowerCase();
 console.log(lower)
 console.log(str5);
+console.log("str5.indexOf('cod'): ", str5.indexOf('cod'));
+console.log("str5.indexOf('Cod'): ", str5.indexOf('Cod'));
+
+const str6 = str5 + ` Coder`;
+console.log(str6);
+console.log(str6.lastIndexOf("Cod"));
+
+// slice
+console.log(str6.slice(2, 5));
+console.log(str6.slice(5));
+
+
+console.log(str6.slice(-9));
+console.log(str6.slice(-9, -3));
+
+// subString()
+
+console.log(str6.substring(2, 8)); // cannot give negative index
+
+// String Concatination
+const a = "Rohit";
+const b = "Negi";
+const c = a + " " + b;
+console.log(c);
+
+console.log(24 + "Rohit"); // 24Rohit
+console.log(24 + "Rohit" + 10); // 24Rohit10
+console.log(24 + 30 + "Rohit"); // 24Rohit10
 
 
 
+// replace()
+
+console.log(str6.replace("ode", "iam"))
+console.log(str6.replaceAll("ode", "iam"))
+
+
+// trim()
+const user = "  Rohit  ";
+console.log(user);
+console.log(user.trim());
+
+const names = "Rohit,Mohot,Suraj,Rohan,Anjali";
+console.log(names);
+console.log(names.split(","));
 
 
 
