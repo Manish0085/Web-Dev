@@ -65,6 +65,28 @@ for(let num of a){
 }
 
 
+let arr1 = [10, 90, 45, 32, 13, 5];
+let arr2 = arr1;
+console.log("Before updating arr2: ")
+console.log("arr1: ", arr1);
+console.log("arr2: ", arr2);
+arr2.push(39);
+console.log("After updating arr2: ")
+console.log("arr1: ", arr1);
+console.log("arr2: ", arr2);
+
+
+
+// we cannot change the add of const array
+const arr3 = [10, 4, 25, 26, 63];
+// arr3 = [42, 85, 38]; // it will change the arr3 address
+// but we can do the following
+arr3.push(53);  // it won't change the array address instaed it will make the changes at the address
+console.log(arr3);
+// Object (non primitive): Copy by reference 
+// Primitive: Copy by value 
+
+
 
 
 
