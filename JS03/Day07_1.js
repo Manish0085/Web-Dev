@@ -50,6 +50,20 @@ console.log(arr);
 // We can use the shift and unshift operation on the array but it is nnot recommended as they slow down the performance of the system
 
 
+// accessing the array element
+let a = [10, 30, 50, 90, 11];
+for(let i=0; i<a.length; i++){
+    console.log("a[", i , "]: ", a[i]);
+}
+
+
+// Acceessing array element using for-of loop
+console.log("Acceessing array element using for-of loop: ")
+let i = 0;
+for(let num of a){
+    console.log("a[", i++ , "]: ", num);
+}
+
 
 
 
