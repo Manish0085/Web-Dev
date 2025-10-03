@@ -88,9 +88,39 @@ console.log(arr3);
 
 
 
+// Slicing in the array
+// syntax: array.slice(startIndex, endIndex);
+const arr4 = [10, 4, 25, 26, 63];
+console.log("Slice array: ", arr4.slice(2, 4)); // this slice operation returns a new array of slice
+console.log("No change in Original array after slice operation: ", arr4);
 
 
+// splice operation
+console.log("Before splice operation, Original array: ", arr4); 
+// syntax: array.splice(startIndex, noOfElementsToBeTrimedOut)
+console.log("arr4.splice(1, 4):", arr4.splice(1, 3));
+console.log("After splive operation, Original arr4: ", arr4);
+arr4.push(51);
+arr4.push(11);
+arr4.push(85);
+console.log(arr4)
+console.log("arr4.splice(1, 4, \"Rohit\", 333):", arr4.splice(1, 3, "Rohit", 333));
+console.log(arr4);
 
+ 
+// spread operator
+
+const a1 = [74, 78, 6, 3, 31, 63, 96];
+const a2 = ["Rohan", "Amit", "Manthan"];
+const a3 = [75, "Nakul", 45, 3, "Mohan"];
+// a1.push(a2);
+// console.log("a1.push(a2): ", a1); 
+
+const a4 = a1.concat(a2, a3);
+console.log(a4);
+// spread operation
+const a5 = [...a1, ...a2, ...a3];
+console.log(a5);
 
 
 
