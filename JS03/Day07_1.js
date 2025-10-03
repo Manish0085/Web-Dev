@@ -119,13 +119,71 @@ const a3 = [75, "Nakul", 45, 3, "Mohan"];
 const a4 = a1.concat(a2, a3);
 console.log(a4);
 // spread operation
+const an = [a1, a2, a3];  // returns a nested array
+console.log(an);
 const a5 = [...a1, ...a2, ...a3];
 console.log(a5);
 
+// converting array to string
+const names = ["Alice", "Bob", "Charlie", "Bob"];
+console.log("names.toString(): ", names.toString());
+console.log("type of \"names.toString()\": ", typeof names.toString());
+// join()
+
+console.log("names.join(\" \"): ", names.join(" "));
+console.log("names.join(\"-\"): ", names.join("-"));
+console.log("names.join(\"\"): ", names.join(""));
+
+console.log("names.indexOf(\"Bob\"): ", names.indexOf("Bob"));
+console.log("names.lsatIndexOf(\"Bob\"): ", names.lastIndexOf("Bob"));
+console.log("names.includes(\"Bob\"): ", names.includes("Bob"));
+
+const name = ["Alice", "Rohit", "Bob", "Mohit", "Charlie", "bob", "alice"];
+console.log("Before applying sorting function: ", name);
+name.sort();
+console.log("After applying sorting function: ", name);
+name.reverse();
+console.log("After applying \"name.reverse()\": ", name);
+// desecding order
+console.log("After applying \"name.sort().reverse()\": ", name.sort().reverse());
+
+
+const b1 = [51, 62, 2, 101, 8, 65, 32];
+b1.sort(); // [101, 2, 32. 51, 62, 65, 8];
+// because by default the js interpreter sort the element based on the ascii value of character irrespective weather the element is number or character or string it treates all the element and character and based on their ascii the sorting os applied 
+console.log("b1.sor(): ", b1);
+
+b1.sort((a, b) => a-b); // custom sorting
+console.log("ascending order: ", b1);
+// ascending ordering
+// if a-b is -ve: a will be first and b will be second
+// if a-b is +ve: b will be first and a will be second
+b1.sort((a, b) => b-a);
+console.log("descending order: ", b1);
 
 
 
+// flattening the array
+const srr = [10, 30, 50, [40, 35, 11], 8];
+console.log("srr: ", srr);
+console.log("srr[3]: ", srr[3]);
+console.log("srr[3][2]: ", srr[3][2]);
 
+const srr1 = [10, 30, 50, [40, 35, [41, 52, 9, 5], 11], 8];
+console.log("srr1: ", srr1);
+console.log("srr1[3]: ", srr1[3]);
+console.log("srr1[3][2]: ", srr1[3][2]);
+console.log("srr1[3][2][2]: ", srr1[3][2][2]);
 
+const s1 = srr.flat();
+const s2 = srr1.flat(2);
+// const s2 = srr1.flat(Infinity);
+// const s2 = srr1.flat(levelToBeFlatten);
+
+// we can specify the level of flatening the array as the arrray can be mutli dimensional
+// const s3 = s2.flat();
+console.log(s1);
+console.log(s2);
+// console.log(s3);
 
 
