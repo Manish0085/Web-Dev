@@ -1,0 +1,90 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #000000, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px 40px;
+  max-width: 700px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: cyan;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px cyan;
+}
+
+.question {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.question:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.question p {
+  font-weight: 600;
+  color: #00ffff;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: cyan;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  background: cyan;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background: #00e6e6;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px cyan;
+}
+
+#out {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #00ffff;
+  font-weight: bold;
+  text-shadow: 0 0 10px cyan;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
