@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympic Countdown Timer</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #00ffe7;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #parent {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 40px 50px;
+      border-radius: 15px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+    }
+
+    #result {
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.3);
+      text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7, 0 0 30px #00ffe7;
+      box-shadow: 0 0 20px #00ffe7, 0 0 40px #00ffe7 inset;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 10px #00ffe7, 0 0 20px #00ffe7;
+      }
+
+      50% {
+        text-shadow: 0 0 20px #00ffe7, 0 0 40px #00ffe7;
+      }
+
+      100% {
+        text-shadow: 0 0 30px #00ffe7, 0 0 60px #00ffe7;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="parent">
+    <h1>Olympic Countdown Timer</h1>
+    <div id="result">Loading...</div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
