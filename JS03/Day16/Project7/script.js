@@ -145,6 +145,5 @@ form.addEventListener('submit', (e) => {
 
 
 
-result.textContent = `Days: ${day} Hour: ${hour} Minute: ${minute} Second: ${second}`
 
 

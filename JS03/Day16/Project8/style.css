@@ -1,0 +1,48 @@
+body {
+    background-color: #000;
+    height: 100vh;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white;
+    animation: growRotate 2s forwards;
+    pointer-events: none; /* So clicks go through circles */
+}
+
+/* Neon glow colors */
+.red { box-shadow: 0 0 10px #ff3b3b, 0 0 20px #ff3b3b; }
+.blue { box-shadow: 0 0 10px #3b8fff, 0 0 20px #3b8fff; }
+.orange { box-shadow: 0 0 10px #ff8c3b, 0 0 20px #ff8c3b; }
+.pink { box-shadow: 0 0 10px #ff3bff, 0 0 20px #ff3bff; }
+.green { box-shadow: 0 0 10px #3bff3b, 0 0 20px #3bff3b; }
+.purple { box-shadow: 0 0 10px #9b3bff, 0 0 20px #9b3bff; }
+
+@keyframes growRotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+        font-size: 10px;
+    }
+    50% {
+        transform: scale(2) rotate(180deg);
+        opacity: 0.8;
+        font-size: 25px;
+    }
+    100% {
+        transform: scale(3) rotate(360deg);
+        opacity: 0;
+        font-size: 40px;
+    }
+}
