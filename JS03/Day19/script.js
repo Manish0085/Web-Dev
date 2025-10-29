@@ -92,6 +92,42 @@
 
 
 
+fetch("https://api.github.com/users")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Data is not present");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        const parent = document.getElementById("first");
+        parent.innerHTML = ""; // clear "Loading..."
+
+        data.forEach((user) => {
+          const card = document.createElement("div");
+          card.className = "card";
+
+          const image = document.createElement("img");
+          image.src = user.avatar_url;
+
+          const name = document.createElement("h3");
+          name.textContent = user.login;
+
+          const profileLink = document.createElement("a");
+          profileLink.href = user.html_url;
+          profileLink.textContent = "View Profile →";
+          profileLink.style.textDecoration = "none";
+          profileLink.target = "_blank";
+          profileLink.style.color = "#58a6ff";
+
+          card.append(image, name, profileLink);
+          parent.append(card);
+        });
+      })
+      .catch((error) => {
+        const parent = document.getElementById("first");
+        parent.textContent = error.message;
+      });
 
 
 
